@@ -1,0 +1,50 @@
+  /* Add this to your existing CSS */
+
+/* Event Cards Styling */
+.event-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    margin: 40px 0; /* Margin above and below */
+  }
+  
+  .card {
+    background-color: #61dafb; /* Card background color */
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .card h2 {
+    margin-bottom: 15px;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align list to the left */
+  }
+  
+  .card ul li {
+    margin: 5px 0; /* Margin between list items */
+  }
+  @media screen and (max-width: 768px) {
+    .event-cards {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards */
+    }
+  
+    .card {
+      width: 90%; /* Make cards wider on mobile */
+      margin-bottom: 20px; /* Space between cards */
+    }
+  }
+  

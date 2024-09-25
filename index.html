@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy PhaseII</title>
+  <link rel="stylesheet" href="stle.css">
+</head>
+<body>
+  <!-- Welcome Page -->
+  <div id="welcome-page">
+    <h1 class="welcome-text"></h1>
+    <button id="enter-button">Take a Tour On Galaxy Phase II<br> visit</button>
+  </div>
+
+  <!-- Main Content (Initially hidden) -->
+  <nav id="navbar" style="display: none;">
+    <div class="logo">
+      <a href="#home">Galaxy PhaseII</a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      &#9776; <!-- Hamburger Icon -->
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#countdown">Home</a></li>
+      <li><a href="#card-container">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#Register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+ 
+    
+    <section id="countdown">
+        <!-- <h2>Countdown to Galaxy 2024</h2> -->
+        <div class="timer">
+          <div class="time-box">
+            <span id="days" class="digit">00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="time-box">
+            <span id="hours" class="digit">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="time-box">
+            <span id="minutes" class="digit">00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="time-box">
+            <span id="seconds" class="digit">00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+
+     
+      </section>
+         
+
+  <!-- <section id="events"> -->
+    <!-- <h1>Our Events</h1>
+    <div class="event-cards">
+      <div class="card" onclick="location.href='technical-events.html';">
+        <h2>Technical Events</h2>
+        <ul>
+          <li>Paper War</li>
+          <li>Project War</li>
+          <li>Circuit Debug</li>
+          <li>Code Cracking</li>
+          <li>Arduino Hackathon</li>
+          <li>Ideathon</li>
+          <li>State Level Robotics Competition</li>
+        </ul>
+      </div>
+      <div class="card" onclick="location.href='non-technical-events.html';">
+        <h2>Non-Technical Events</h2>
+        <ul>
+          <li>Photography</li>
+          <li>Short Film</li>
+          <li>Poster Design (On Spot)</li>
+          <li>IPL Auction</li>
+          <li>Treasure Hunt</li>
+          <li>Escape Room</li>
+        </ul>
+      </div>
+    </div> -->
+    <main class="container" id="card-container">
+      <a href="technical-events.html"><section class="card">
+        <div class="product-image">
+          <img src="tech1.png" alt="OFF-white Red Edition" draggable="false" />
+        </div>
+        <div class="product-info">
+          <h2>Technical Events</h2>
+          <p>Show Your Technical Skills</p>
+          <div class="price">INR 200</div>
+        </div>
+        <div class="btn">
+          <button class="buy-btn">Check Out</button>
+          <button class="fav">
+            <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+            </svg>
+          </button>
+        </div></a>
+      </section>
+
+      <a href="non-technical-events.html"><section class="card card-blue">
+        <div class="product-image">
+          <img src="nontech1.png" alt="OFF-white Blue Edition" draggable="false" />
+        </div>
+        <div class="product-info">
+          <h2>Non-Technical Events</h2>
+          <p>Show Your Non-Technical Skills</p>
+          <div class="price">INR 200</div>
+        </div>
+        <div class="btn">
+          <button class="buy-btn">Check Out</button>
+          <button class="fav">
+            <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+            </svg>
+          </button>
+        </div>
+      </section></a>
+      <article class="cards" id="Register" >
+        <img
+          class="card__background"
+          src="back2.jpg"
+          alt="Some other image"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">REGISTER</h2>
+            <p class="card__description">
+              Kindly Register to participate in Galaxy PhaseII
+            </p>
+          </div>
+          <a href="https://forms.gle/guWyomqGWNQt4Z3S6">
+            <button class="card__button">Register</button>
+          </a>
+        </div>
+      </article>
+    </main>
+<!-- 
+  </section> -->
+<!-- <div class="emp">
+  <br>
+  <br>
+</div> -->
+  <!-- <article class="cards">
+    <img
+      class="card__background"
+      src="back1.jpg"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+      width="1920"
+      height="2193"
+    >
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">REGISTER</h2>
+        <p class="card__description">
+         Kindly Register to participate in Galaxy PhaseII
+        </p>
+      </div>
+     <a href="https://forms.gle/v5E9ZTJ9de86hrFDA"> <button class="card__button">Register</button></a>
+    </div>
+
+    
+    
+  </article> -->
+
+<!-- 
+  <div class="cards-container">
+
+
+    <article class="cards">
+      <img
+        class="card__background"
+        src="back1.jpg"
+        alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+        width="1920"
+        height="2193"
+      />
+      <div class="card__content | flow">
+        <div class="card__content--container | flow">
+          <h2 class="card__title">REGISTER</h2>
+          <p class="card__description">
+            Kindly Register to participate in Galaxy PhaseII
+          </p>
+        </div>
+        <a href="https://forms.gle/v5E9ZTJ9de86hrFDA">
+          <button class="card__button">Register</button>
+        </a>
+      </div>
+    </article>
+  
+    <article class="cards" >
+      <img
+        class="card__background"
+        src="back2.jpg"
+        alt="Some other image"
+        width="1920"
+        height="2193"
+      />
+      <div class="card__content | flow">
+        <div class="card__content--container | flow">
+          <h2 class="card__title">REGISTER</h2>
+          <p class="card__description">
+            Kindly Register to participate in Galaxy PhaseII
+          </p>
+        </div>
+        <a href="https://forms.gle/v5E9ZTJ9de86hrFDA">
+          <button class="card__button">Register</button>
+        </a>
+      </div>
+    </article>
+  </div>
+   -->
+
+  
+  <!-- <section id="Register">
+    <h1>About Us</h1>
+  </section> -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <!-- Left side: Contact Information -->
+      <div class="contact-details">
+        <h2>Contact Information</h2>
+        <p><strong>Seceretary:</strong> THANUJ KUMAR R</p>
+        <p><strong>Phone :</strong> +91 6374 668 830</p>
+     
+        <p><strong>Join Seceretary:</strong> SRIVATSAN B</p>
+        <p><strong>Phone :</strong> +91 82208 04696</p>
+        <p><strong>Email:</strong> galaxyphase2ece@gmail.com</p>
+        <a href="https://www.gcee.ac.in/">GCEE</a>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/M84g5TDHf1UHunoD6">VIEW IN MAPS</a></p>
+      </div>
+  
+      <!-- Right side: Contact Form -->
+      <div class="contact-form">
+        <h2>Drop Us a Message</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <p id="form-status"></p>
+      </div>
+    </div>
+  </section>
+  
+    
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Location -->
+      <div class="footer-location">
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/M84g5TDHf1UHunoD6">VIEW IN MAPS</a></p>
+      </div>
+  
+      <!-- Links -->
+      <div class="footer-links">
+        <a href="#countdown">Home</a> |
+        <a href="#card-container">Events</a> |
+        <a href="#Register">Register</a> |
+        <a href="#contact">Contact</a>
+      </div>
+  
+      <!-- Greeting and Motivational Message -->
+      <div class="footer-message">
+        <p>Welcome to Galaxy Phase II! <br> Thank you for joining us as we celebrate creativity, talent, and the spirit of innovation.  Together, let's make memories and inspire one another to reach for the stars!</p>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
